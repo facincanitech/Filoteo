@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filoteo — filosofia e teologia</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="#topo" class="brand">Filoteo <span class="mark">Φ · Θ</span></a>
+  <nav class="topnav">
+    <a href="#sec-estoicismo" data-cat="filo-historia">Filosofia</a>
+    <a href="#sec-graca" data-cat="teo-dogmatica">Teologia</a>
+    <a href="#sec-livre-arbitrio" data-cat="inter">Interseção</a>
+    <a href="#sec-ordo" data-cat="ordo">Ordo Studiorum</a>
+  </nav>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="buscar verbete...">
+      <span class="search-count" id="search-count"></span>
+    </div>
+
+    <div class="side-group filo">
+      <h3 data-cat="filo-historia">Filosofia <span class="group-note">Ordo Studiorum</span></h3>
+
+      <div class="side-subject">
+        <h4 class="subject-stub">Lógica <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Metafísica <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Teodiceia <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Cosmologia <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Ética <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 data-cat="filo-historia">História da Filosofia</h4>
+        <ul class="side-list" data-group="filo-historia">
+          <li data-title="estoicismo zenão cítio epicteto marco aurélio"><a href="#sec-estoicismo">Estoicismo <span class="stag">corrente</span></a></li>
+          <li data-title="escolástica tomás aquino anselmo abelardo duns escoto ockham universidades medievais"><a href="#sec-escolastica">Escolástica <span class="stag">corrente</span></a></li>
+          <li data-title="existencialismo kierkegaard nietzsche sartre camus heidegger angústia absurdo"><a href="#sec-existencialismo">Existencialismo <span class="stag">corrente</span></a></li>
+        </ul>
+      </div>
+      <div class="side-subject">
+        <h4 data-cat="filo-referencia">Referência geral</h4>
+        <ul class="side-list" data-group="filo-referencia">
+          <li data-title="glossário conceitos eudaimonia lógos dasein epoché ontologia epistemologia"><a href="#sec-glossario">Glossário de conceitos <span class="stag">referência</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-group teo">
+      <h3 data-cat="teo-dogmatica">Teologia <span class="group-note">currículo eclesiástico</span></h3>
+
+      <div class="side-subject">
+        <h4 class="subject-stub">Teologia Fundamental <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 data-cat="teo-dogmatica">Dogmática</h4>
+        <ul class="side-list" data-group="teo-dogmatica">
+          <li data-title="graça agostinho pelágio trento tomás aquino"><a href="#sec-graca">Doutrina da Graça <span class="stag">doutrina</span></a></li>
+        </ul>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Moral <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Patrística <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 class="subject-stub">Sagrada Escritura <span class="stag">em preparo</span></h4>
+      </div>
+      <div class="side-subject">
+        <h4 data-cat="teo-historia">História da Igreja</h4>
+        <ul class="side-list" data-group="teo-historia">
+          <li data-title="tradições cristãs catolicismo ortodoxia protestantismo cisma reforma"><a href="#sec-tradicoes">Tradições cristãs <span class="stag">panorama</span></a></li>
+          <li data-title="linha do tempo eclesial concílios cisma reforma vaticano"><a href="#sec-linha-tempo">Linha do tempo eclesial <span class="stag">cronologia</span></a></li>
+        </ul>
+      </div>
+      <div class="side-subject">
+        <h4 data-cat="teo-referencia">Referência geral</h4>
+        <ul class="side-list" data-group="teo-referencia">
+          <li data-title="textos-fonte bíblia padres da igreja credos niceia calcedônia"><a href="#sec-textos-fonte">Textos-fonte <span class="stag">referência</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-group inter">
+      <h3 data-cat="inter">Interseção</h3>
+      <ul class="side-list" data-group="inter">
+        <li data-title="livre-arbítrio graça disputatio tomás aquino boécio"><a href="#sec-livre-arbitrio">Livre-arbítrio e graça <span class="stag">disputatio</span></a></li>
+        <li class="stub" data-title="problema do mal"><a href="#">O problema do mal <span class="stag">em preparo</span></a></li>
+        <li class="stub" data-title="cinco vias tomás aquino"><a href="#">As cinco vias de Tomás de Aquino <span class="stag">em preparo</span></a></li>
+      </ul>
+    </div>
+
+    <div class="side-group ordo">
+      <h3 data-cat="ordo">Ordo Studiorum</h3>
+      <ul class="side-list" data-group="ordo">
+        <li data-title="ordo studiorum ratio fundamentalis ratio nationalis cnbb currículo formação sacerdotal"><a href="#sec-ordo">Como este hub é organizado <span class="stag">estrutura</span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="content" id="topo">
+
+    <section class="hero">
+      <div class="eyebrow">um hub de conteúdo curado</div>
+      <h1>Duas vias para a mesma pergunta.</h1>
+      <p class="lede">A filosofia pergunta pela razão. A teologia pergunta pela revelação. Filoteo existe onde as duas conversam — sem resumo raso, sempre com fonte.</p>
+    </section>
+
+    <div class="cat-panel active" data-cat="filo-historia">
+    <section class="verbete-section verbete" id="sec-estoicismo" data-search="estoicismo zenão cítio epicteto marco aurélio sêneca virtudes cardeais lógos">
+      <span class="kicker filo">corrente filosófica</span>
+      <h1>Estoicismo</h1>
+      <p class="subtitulo">Viver de acordo com a natureza e a razão — a ética grega que atravessou Roma.</p>
+
+      <div class="verbete-meta">
+        <span>fundação: Atenas, c. 300 a.C.</span>
+        <span>fundador: Zenão de Cítio</span>
+        <span>período de maior influência: helenístico e imperial romano</span>
+      </div>
+
+      <p>O Estoicismo nasceu quando Zenão de Cítio começou a ensinar sob o Pórtico Pintado (Stoá Poikílē) de Atenas, dando origem ao nome da escola. Sucederam-no Cleantes e depois Crisipo, responsável por sistematizar boa parte da doutrina que chegou até nós apenas de forma fragmentária nesse primeiro período.</p>
+
+      <p>A escola divide sua filosofia em três partes interligadas: lógica, física e ética. A física estoica é panteísta — o cosmos é governado por um princípio racional ativo, o <em>lógos</em>, que os estoicos identificam com a própria natureza e, em certo sentido, com a divindade. Dessa física decorre a ética: viver bem é viver "de acordo com a natureza", ou seja, agindo em conformidade com a razão que estrutura o universo.</p>
+
+      <h2>A doutrina do que depende de nós</h2>
+      <p>O núcleo prático mais conhecido do Estoicismo é a distinção entre aquilo que está sob nosso controle — julgamentos, desejos, impulsos, nossas próprias ações — e aquilo que não está: corpo, posses, reputação, os acontecimentos externos. A perturbação humana, para os estoicos, não vem dos eventos em si, mas dos julgamentos que fazemos sobre eles. Essa ideia é o ponto de partida do <em>Enchirídion</em> de Epicteto, escrito posterior a partir dos ensinamentos orais do filósofo, ex-escravo que se tornou uma das vozes centrais do estoicismo tardio.</p>
+
+      <p class="marginalia">Nota: o estoicismo romano — Sêneca, Epicteto, Marco Aurélio — é a fase mais documentada e a mais lida hoje, mas representa já uma terceira geração da escola, distante três séculos de Zenão.</p>
+
+      <h2>As quatro virtudes cardeais</h2>
+      <p>Sabedoria, coragem, justiça e temperança formam o conjunto de virtudes que, para os estoicos, constituem o único bem verdadeiro. Saúde, riqueza e prazer são classificados como "indiferentes" — não maus, mas irrelevantes para a felicidade (<em>eudaimonia</em>), que depende inteiramente do caráter virtuoso, não das circunstâncias.</p>
+
+      <h2>Marco Aurélio e as Meditações</h2>
+      <p>As <em>Meditações</em> de Marco Aurélio, imperador romano entre 161 e 180 d.C., não foram escritas para publicação — são anotações pessoais de disciplina filosófica, um exercício de autocorreção segundo os princípios estoicos, redigidas provavelmente durante campanhas militares nas fronteiras do império.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Epicteto, <em>Enchirídion</em> (compilado por Arriano)</li>
+          <li>Marco Aurélio, <em>Meditações</em> (Τὰ εἰς ἑαυτόν)</li>
+          <li>Sêneca, <em>Cartas a Lucílio</em></li>
+          <li>Diógenes Laércio, <em>Vidas e Doutrinas dos Filósofos Ilustres</em>, livro VII</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="verbete-section verbete" id="sec-escolastica" data-search="escolástica tomás aquino anselmo abelardo duns escoto ockham universidades medievais universais nominalismo realismo">
+      <span class="kicker filo">corrente filosófica</span>
+      <h1>Escolástica</h1>
+      <p class="subtitulo">A razão a serviço da fé nas universidades medievais — e o método que transformou toda objeção em oportunidade.</p>
+
+      <div class="verbete-meta">
+        <span>período: séc. XI–XVI</span>
+        <span>berço: escolas catedralícias e universidades europeias</span>
+        <span>figura central: Tomás de Aquino</span>
+      </div>
+
+      <p>Escolástica não nomeia uma doutrina, mas um método — o da <em>quaestio disputata</em> — praticado nas escolas catedralícias e, a partir do séc. XII, nas universidades recém-formadas de Paris, Oxford e Bolonha. Seu programa é resumido na fórmula de Anselmo de Cantuária, <em>fides quaerens intellectum</em>: a fé busca compreensão, não prova externa a si mesma, mas articulação racional do que já se crê.</p>
+
+      <p>O impulso decisivo veio da redescoberta do corpus aristotélico completo no Ocidente latino, via traduções do árabe e do grego feitas em Toledo e na Sicília nos séculos XII e XIII — muitas vezes acompanhadas dos comentários de Avicena e Averróis, que os escolásticos liam e discutiam lado a lado com o próprio Aristóteles.</p>
+
+      <h2>Pedro Abelardo e o método da questão</h2>
+      <p>Antes de Aquino, Pedro Abelardo já havia formalizado em <em>Sic et Non</em> ("Sim e Não") uma técnica de justapor autoridades patrísticas em aparente contradição sobre uma mesma questão, forçando o leitor a distinguir, conciliar ou hierarquizar as fontes em vez de apenas citá-las. Esse exercício de conciliação dialética é o embrião direto da <em>quaestio disputata</em> que Aquino levaria ao seu ponto mais alto.</p>
+
+      <h2>Tomás de Aquino e a síntese aristotélico-cristã</h2>
+      <p>Na <em>Summa Theologiae</em>, Tomás de Aquino usa a metafísica aristotélica — ato e potência, substância e acidente, causa formal, material, eficiente e final — como instrumental conceitual para tratar questões teológicas: a existência de Deus, a natureza da alma, a estrutura do ato livre. O resultado não é uma subordinação da fé à filosofia grega, mas a tese de que razão natural e revelação, vindas ambas de Deus, não podem colidir quando corretamente entendidas.</p>
+
+      <h2>A via moderna: Duns Escoto e Ockham</h2>
+      <p>No fim do período escolástico, Duns Escoto questiona pontos da síntese tomista — defende a "unicidade" (univocidade) do conceito de ser aplicado a Deus e às criaturas, contra a analogia do ser de Aquino. Guilherme de Ockham radicaliza a crítica: nega a existência real de universais fora da mente (nominalismo) e formula o princípio de economia conhecido como "navalha de Ockham" — não multiplicar entidades além do necessário. Com isso, a via moderna abre uma fissura entre fé e razão que os primeiros escolásticos haviam tentado fechar.</p>
+
+      <p class="marginalia">Nota: o debate sobre os universais — se conceitos como "humanidade" existem além dos indivíduos particulares (realismo) ou são apenas nomes convenientes da mente (nominalismo) — atravessa toda a Escolástica e reaparece, sob outro vocabulário, na filosofia analítica contemporânea da linguagem.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Anselmo de Cantuária, <em>Proslógio</em></li>
+          <li>Pedro Abelardo, <em>Sic et Non</em></li>
+          <li>Tomás de Aquino, <em>Summa Theologiae</em></li>
+          <li>Guilherme de Ockham, <em>Summa Logicae</em></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="verbete-section verbete" id="sec-existencialismo" data-search="existencialismo kierkegaard nietzsche sartre camus heidegger angústia absurdo liberdade má-fé">
+      <span class="kicker filo">corrente filosófica</span>
+      <h1>Existencialismo</h1>
+      <p class="subtitulo">A existência precede a essência — e por isso ninguém nasce com um roteiro pronto para viver.</p>
+
+      <div class="verbete-meta">
+        <span>precursor: Søren Kierkegaard, séc. XIX</span>
+        <span>auge: pós-Segunda Guerra Mundial, França</span>
+        <span>figuras centrais: Sartre, Camus, Heidegger</span>
+      </div>
+
+      <p>O Existencialismo nasce como reação aos grandes sistemas racionalistas — sobretudo ao idealismo de Hegel, que pretendia explicar toda a realidade e a história dentro de um esquema lógico fechado. Contra isso, Kierkegaard insiste que a existência concreta de um indivíduo — suas escolhas, sua angústia, sua relação pessoal com Deus — não cabe em nenhum sistema, por mais completo que este seja.</p>
+
+      <h2>Kierkegaard: a verdade é subjetividade</h2>
+      <p>Em <em>Temor e Tremor</em>, Kierkegaard lê o sacrifício de Isaac por Abraão não como um problema moral resolvido, mas como um "salto de fé" que suspende a própria ética em nome de uma relação absoluta com Deus — algo que nenhuma lógica universal consegue justificar de fora. Já em <em>O Conceito de Angústia</em>, a angústia é descrita como a experiência da liberdade diante da própria possibilidade, o vertigo de poder escolher.</p>
+
+      <h2>Sartre e a liberdade condenada</h2>
+      <p>Jean-Paul Sartre, em <em>O Ser e o Nada</em>, formula a tese central da corrente: "a existência precede a essência". Ao contrário de um objeto fabricado (que tem sua função definida antes de existir), o ser humano primeiro existe, e só depois, através de suas escolhas, se define. Não há natureza humana fixa que determine o que devemos ser. Dessa radical ausência de essência prévia decorre que o homem está "condenado a ser livre" — mesmo a recusa de escolher é, ela mesma, uma escolha. Sartre chama de "má-fé" a tentativa de fugir dessa responsabilidade fingindo-se determinado por circunstâncias, papel social ou natureza.</p>
+
+      <h2>Camus e o absurdo</h2>
+      <p>Albert Camus, em <em>O Mito de Sísifo</em>, parte de outro ponto: o "absurdo" é o confronto entre o desejo humano de sentido e o silêncio irracional do universo, que não oferece nenhum. Sísifo, condenado a rolar eternamente uma pedra montanha acima, é a imagem dessa condição — e Camus conclui, célebre, que é preciso imaginar Sísifo feliz: a revolta lúcida contra o absurdo, sem apelo a consolo transcendente, é a única resposta digna que resta.</p>
+
+      <p class="marginalia">Nota: Kierkegaard e Sartre representam os dois polos do Existencialismo — um religioso, outro ateu — mas ambos concordam que a existência individual concreta não pode ser dissolvida em um sistema abstrato, seja ele hegeliano ou científico.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Kierkegaard, <em>Temor e Tremor</em>; <em>O Conceito de Angústia</em></li>
+          <li>Sartre, <em>O Ser e o Nada</em>; <em>O Existencialismo é um Humanismo</em></li>
+          <li>Camus, <em>O Mito de Sísifo</em></li>
+          <li>Heidegger, <em>Ser e Tempo</em></li>
+        </ol>
+      </div>
+    </section>
+
+    </div>
+
+    <div class="cat-panel" data-cat="filo-referencia">
+    <section class="verbete-section verbete" id="sec-glossario" data-search="glossário conceitos eudaimonia lógos dasein epoché ontologia epistemologia a priori qualia teleologia">
+      <span class="kicker filo">referência</span>
+      <h1>Glossário de conceitos</h1>
+      <p class="subtitulo">Termos que atravessam correntes e séculos — reunidos aqui para consulta rápida.</p>
+
+      <dl class="glossario">
+        <dt>Eudaimonia</dt>
+        <dd>Na ética grega, o estado de "vida boa" ou florescimento humano — frequentemente traduzido (de forma imprecisa) como "felicidade". Não é um sentimento passageiro, mas a realização plena das capacidades próprias do ser humano ao longo de uma vida.</dd>
+
+        <dt>Lógos</dt>
+        <dd>Princípio racional que estrutura o cosmos, para os estoicos; também "palavra", "discurso" ou "razão" em grego. No prólogo do Evangelho de João, o termo é apropriado pela teologia cristã para nomear o Verbo divino.</dd>
+
+        <dt>Ontologia</dt>
+        <dd>Ramo da metafísica que estuda o ser enquanto ser — o que significa "existir" e quais categorias fundamentais de entidades há.</dd>
+
+        <dt>Epistemologia</dt>
+        <dd>Estudo filosófico do conhecimento: suas condições, limites, fontes (razão, experiência, revelação) e o que distingue crença justificada de mera opinião.</dd>
+
+        <dt>A priori / a posteriori</dt>
+        <dd>Distinção kantiana entre conhecimento independente da experiência (a priori, como verdades matemáticas) e conhecimento que depende dela (a posteriori, como fatos empíricos).</dd>
+
+        <dt>Dasein</dt>
+        <dd>Termo de Heidegger (literalmente "ser-aí") para designar o modo de existir próprio do ser humano — um ser que sempre já se relaciona com seu próprio ser e com o tempo, em vez de simplesmente estar presente como uma coisa.</dd>
+
+        <dt>Epoché</dt>
+        <dd>Na fenomenologia de Husserl, a "suspensão" ou colocação entre parênteses dos pressupostos naturais sobre a existência do mundo externo, para descrever a experiência consciente tal como ela se dá.</dd>
+
+        <dt>Teleologia</dt>
+        <dd>Explicação de algo por referência a seu fim ou propósito (do grego <em>télos</em>) — central na física aristotélica e na moral tomista, e rejeitada pela ciência moderna mecanicista.</dd>
+
+        <dt>Universais</dt>
+        <dd>Propriedades ou naturezas gerais (como "humanidade" ou "vermelhidão") que muitos indivíduos particulares compartilham. O debate escolástico entre realismo e nominalismo gira em torno de saber se universais existem além da mente.</dd>
+
+        <dt>Qualia</dt>
+        <dd>No debate contemporâneo sobre a consciência, as qualidades subjetivas e imediatas da experiência — "como é" sentir a cor vermelha ou uma dor — frequentemente invocadas como o que a explicação puramente física da mente deixaria de fora.</dd>
+      </dl>
+    </section>
+    </div>
+
+    <div class="cat-panel" data-cat="teo-dogmatica">
+    <section class="verbete-section verbete" id="sec-graca" data-search="graça agostinho pelágio trento tomás aquino justificação">
+      <span class="kicker teo">doutrina · tradição católica</span>
+      <h1>Doutrina da Graça</h1>
+      <p class="subtitulo">O favor gratuito de Deus e a pergunta que dividiu Agostinho de Pelágio.</p>
+
+      <div class="verbete-meta">
+        <span>controvérsia fundadora: séc. V (Agostinho × Pelágio)</span>
+        <span>definição conciliar: Concílio de Trento, séc. XVI</span>
+      </div>
+
+      <p>Graça (do latim <em>gratia</em>) é, na teologia cristã, o auxílio livre e imerecido de Deus ao ser humano — para a criação, para a conversão e para a perseverança na vida cristã. A questão que a doutrina tenta resolver é antiga e continua em aberto em suas nuances: se a salvação depende inteiramente da iniciativa divina, que espaço resta à liberdade humana?</p>
+
+      <h2>A controvérsia pelagiana</h2>
+      <p>No início do século V, o monge britânico Pelágio sustentava que o ser humano possui capacidade natural de evitar o pecado e buscar o bem pelo próprio esforço moral, sem depender de uma graça divina que transforme a vontade internamente. Agostinho de Hipona respondeu que, após o pecado original, a vontade humana está ferida e incapaz de se voltar para o bem sem a ação prévia da graça — é ela que move a vontade, não apenas a auxilia. Essa posição agostiniana foi confirmada em concílios regionais do século V e tornou-se referência normativa para toda a teologia latina posterior.</p>
+
+      <p class="marginalia">Nota: o debate não terminou em Agostinho. Ecoou no confronto entre tomistas e molinistas (séc. XVI) sobre como conciliar graça eficaz e liberdade, e de novo na Reforma, quando Lutero radicalizou a impotência da vontade em resposta a Erasmo.</p>
+
+      <h2>A síntese tomista</h2>
+      <p>Tomás de Aquino, na <em>Summa Theologiae</em> (Prima Secundae, questões 109 a 114), distingue graça operante — que move a vontade sem ainda contar com seu consentimento ativo — e graça cooperante, na qual a vontade, já movida, coopera livremente com o auxílio divino. Para Aquino, graça e livre-arbítrio não competem pelo mesmo espaço causal: Deus age como causa primeira, a vontade humana como causa segunda, de modo que o ato livre é inteiramente de Deus e inteiramente do homem, em ordens diferentes.</p>
+
+      <h2>Trento e a definição conciliar</h2>
+      <p>O Concílio de Trento (1545–1563), respondendo à Reforma Protestante, definiu que a justificação exige a cooperação livre da vontade humana com a graça preveniente — rejeitando tanto o pelagianismo (que dispensa a graça) quanto uma leitura da posição luterana que via a vontade humana como puramente passiva no processo da salvação.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Agostinho de Hipona, <em>De gratia et libero arbitrio</em></li>
+          <li>Tomás de Aquino, <em>Summa Theologiae</em>, I-II, q. 109–114</li>
+          <li>Concílio de Trento, <em>Decretum de Iustificatione</em> (Sessão VI, 1547)</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="verbete-section verbete" id="sec-tradicoes" data-search="tradições cristãs catolicismo ortodoxia protestantismo cisma reforma papado filioque sacramentos">
+      <span class="kicker teo">panorama · tradições</span>
+      <h1>Tradições cristãs</h1>
+      <p class="subtitulo">Uma só fé, três grandes famílias — e as rupturas que as separaram.</p>
+
+      <div class="verbete-meta">
+        <span>ruptura Oriente-Ocidente: Grande Cisma, 1054</span>
+        <span>ruptura ocidental: Reforma Protestante, 1517</span>
+      </div>
+
+      <p>O cristianismo se organiza hoje em três grandes famílias — Catolicismo, Ortodoxia Oriental e Protestantismo — que compartilham a Escritura e os credos dos primeiros concílios, mas divergem sobre autoridade, sacramentos e o modo de conceber a salvação. Nenhuma ruptura foi instantânea: cada uma resultou de séculos de tensão teológica, política e cultural antes do rompimento formal.</p>
+
+      <h2>Catolicismo Romano</h2>
+      <p>Estruturado em torno da autoridade do Bispo de Roma como sucessor de Pedro, o Catolicismo reconhece sete sacramentos, sustenta a autoridade do magistério eclesiástico ao lado da Escritura e da Tradição, e foi definido em resposta à Reforma pelo Concílio de Trento (1545–1563) e, em questões de infalibilidade papal e eclesiologia, pelos Concílios Vaticano I (1870) e Vaticano II (1962–1965).</p>
+
+      <h2>Ortodoxia Oriental</h2>
+      <p>Separada de Roma no Grande Cisma de 1054, a Ortodoxia rejeita a jurisdição universal do papa em favor de um governo conciliar entre patriarcados autocéfalos (Constantinopla, Antioquia, Alexandria, entre outros), e recusa a adição unilateral do <em>filioque</em> ("e do Filho") ao Credo Niceno-Constantinopolitano, que o Ocidente inseriu para afirmar que o Espírito Santo procede do Pai e do Filho. Sua teologia dá ênfase central à <em>theosis</em> — a divinização progressiva do crente pela graça, tema já presente em Atanásio e nos Padres Capadócios.</p>
+
+      <h2>Protestantismo e a Reforma</h2>
+      <p>Iniciado quando Martinho Lutero afixou as 95 Teses em Wittenberg (1517), o Protestantismo se organiza em torno de cinco princípios "sola": <em>sola scriptura</em> (a Escritura como única autoridade normativa), <em>sola fide</em> e <em>sola gratia</em> (justificação pela fé e pela graça, sem méritos), <em>solus Christus</em> e <em>soli Deo gloria</em>. Fragmentou-se rapidamente em tradições distintas — luterana, reformada/calvinista, anglicana, e mais tarde batista, metodista e pentecostal — que divergem entre si sobre sacramentos, governo eclesiástico e a relação entre graça e livre-arbítrio.</p>
+
+      <p class="marginalia">Nota: apesar das rupturas institucionais, as três famílias compartilham os credos dos concílios dos primeiros cinco séculos (Niceia, Constantinopla, Éfeso, Calcedônia) — o que faz da cristologia definida nesse período um território doutrinário comum, ao contrário das questões de autoridade e graça que as separam.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Concílio de Trento, <em>Decretum de Iustificatione</em></li>
+          <li>Martinho Lutero, <em>As Noventa e Cinco Teses</em></li>
+          <li>Confissão de Augsburgo (1530)</li>
+          <li>Fócio de Constantinopla, <em>Sobre a Mistagogia do Espírito Santo</em></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="verbete-section verbete" id="sec-textos-fonte" data-search="textos-fonte bíblia padres da igreja credos niceia calcedônia patrística cânone">
+      <span class="kicker teo">referência · fontes primárias</span>
+      <h1>Textos-fonte</h1>
+      <p class="subtitulo">Onde a teologia cristã busca suas provas — da Escritura aos credos conciliares.</p>
+
+      <dl class="glossario">
+        <dt>A Bíblia</dt>
+        <dd>Conjunto de textos reconhecidos como Escritura canônica — o Antigo Testamento (compartilhado, com variações de cânone, entre judaísmo e cristianismo) e o Novo Testamento (os quatro Evangelhos, Atos, as epístolas paulinas e outras, e o Apocalipse). Fonte primeira e norma última para toda reflexão teológica cristã.</dd>
+
+        <dt>Padres da Igreja</dt>
+        <dd>Escritores cristãos dos primeiros séculos cuja obra moldou a doutrina ortodoxa — entre eles Atanásio de Alexandria (defensor da divindade plena de Cristo contra o arianismo), Orígenes (exegese alegórica e especulação sistemática pioneira) e Agostinho de Hipona (graça, livre-arbítrio, a cidade de Deus).</dd>
+
+        <dt>Credo Niceno-Constantinopolitano</dt>
+        <dd>Fórmula de fé definida em Niceia (325) e ampliada em Constantinopla (381), que afirma a consubstancialidade do Filho com o Pai (<em>homoousios</em>) contra o arianismo — ainda hoje recitada na liturgia da maioria das tradições cristãs.</dd>
+
+        <dt>Definição de Calcedônia</dt>
+        <dd>Formulação cristológica do Concílio de Calcedônia (451): Cristo é uma só pessoa em duas naturezas, divina e humana, "sem confusão, sem mudança, sem divisão, sem separação" — resposta tanto ao nestorianismo quanto ao monofisismo.</dd>
+
+        <dt><em>Summa Theologiae</em></dt>
+        <dd>Síntese sistemática de Tomás de Aquino (séc. XIII), organizada em forma de questões disputadas, que permanece referência central da teologia católica, sobretudo em matéria de graça, virtude e lei natural.</dd>
+
+        <dt>Catecismo</dt>
+        <dd>Exposição sistemática e didática da doutrina de uma tradição cristã voltada à instrução dos fiéis — o mais influente na tradição católica contemporânea é o <em>Catecismo da Igreja Católica</em> (1992), que remete constantemente às fontes patrísticas e conciliares.</dd>
+      </dl>
+    </section>
+
+    <section class="verbete-section verbete" id="sec-linha-tempo" data-search="linha do tempo eclesial concílios niceia calcedônia cisma reforma trento vaticano cronologia história da igreja">
+      <span class="kicker teo">referência · cronologia</span>
+      <h1>Linha do tempo eclesial</h1>
+      <p class="subtitulo">Os marcos que estruturam dois mil anos de história da Igreja.</p>
+
+      <ol class="lista cronologia">
+        <li><strong>c. 30–33</strong> — Crucificação e ressurreição de Jesus Cristo; início da comunidade apostólica em Jerusalém.</li>
+        <li><strong>325</strong> — Concílio de Niceia: primeira definição conciliar da divindade plena do Filho, contra o arianismo.</li>
+        <li><strong>381</strong> — Concílio de Constantinopla I: afirma a divindade do Espírito Santo e completa o Credo Niceno-Constantinopolitano.</li>
+        <li><strong>431</strong> — Concílio de Éfeso: condena o nestorianismo e proclama Maria <em>Theotókos</em> ("Mãe de Deus").</li>
+        <li><strong>451</strong> — Concílio de Calcedônia: define as duas naturezas de Cristo em uma só pessoa.</li>
+        <li><strong>1054</strong> — Grande Cisma: excomunhões mútuas entre Roma e Constantinopla rompem a comunhão entre Oriente e Ocidente.</li>
+        <li><strong>1517</strong> — Martinho Lutero afixa as 95 Teses em Wittenberg; início da Reforma Protestante.</li>
+        <li><strong>1545–1563</strong> — Concílio de Trento: resposta católica à Reforma, define justificação, sacramentos e cânone bíblico.</li>
+        <li><strong>1962–1965</strong> — Concílio Vaticano II: reforma litúrgica e reposicionamento pastoral da Igreja Católica diante do mundo moderno.</li>
+      </ol>
+
+      <p class="marginalia">Nota: esta cronologia é centrada na tradição ocidental-latina, por ser o eixo dos demais verbetes deste hub; uma linha do tempo das igrejas orientais teria marcos adicionais próprios, como os concílios não recebidos por elas após 451.</p>
+    </section>
+    </div>
+
+    <div class="cat-panel" data-cat="inter">
+    <section class="verbete-section verbete" id="sec-livre-arbitrio" data-search="livre-arbítrio graça disputatio tomás aquino boécio agostinho compatibilismo">
+      <span class="kicker inter">interseção · disputatio</span>
+      <h1>Livre-arbítrio e graça</h1>
+      <p class="subtitulo">Se Deus move a vontade, a vontade ainda é livre? — reconstruído no método da questão disputada.</p>
+
+      <div class="verbete-meta">
+        <span>filosofia: metafísica da ação, determinismo</span>
+        <span>teologia: graça eficaz, predestinação</span>
+        <span>método: quaestio disputata (Tomás de Aquino)</span>
+      </div>
+
+      <p>Este verbete não resume o problema — reconstrói ele no formato em que foi de fato debatido nas universidades medievais: a questão disputada. Uma pergunta é posta, objeções sérias são levantadas contra a resposta que se pretende defender, uma autoridade contrária é citada, e só então vem a resposta (<em>respondeo</em>), seguida da réplica direta a cada objeção.</p>
+
+      <div class="disputatio">
+        <p class="quaestio">Se a vontade humana é movida pela graça de Deus, ela ainda pode ser chamada livre?</p>
+
+        <div class="bloco objecoes-bloco">
+          <span class="label">Videtur quod não — parece que não</span>
+          <ol class="objecoes">
+            <li><strong>1.</strong> Tudo o que é movido por outro não se move por si mesmo, e o que não se move por si mesmo não é livre. Se a graça move a vontade, a vontade não é a origem do próprio ato — logo, não é livre.</li>
+            <li><strong>2.</strong> Se Deus, sendo onisciente, já sabe infalivelmente qual escolha a vontade fará, essa escolha não poderia ter sido diferente — e o que não poderia ser diferente não é contingente, condição necessária da liberdade.</li>
+            <li><strong>3.</strong> A experiência estoica e a experiência cristã concordam que sentimos nossos atos como nossos. Mas se a causa última de todo ato bom é externa (a graça), esse sentimento de autoria é ilusório.</li>
+          </ol>
+        </div>
+
+        <div class="bloco sed-contra">
+          <span class="label">Sed contra — em contrário</span>
+          <p>Agostinho, em <em>De gratia et libero arbitrio</em>, sustenta que a Escritura em toda parte pressupõe os dois: manda o bem (o que só faz sentido se o homem é livre para obedecer) e promete a graça que capacita a obedecer. Se um excluísse o outro, a própria pregação seria incoerente.</p>
+        </div>
+
+        <div class="bloco respondeo">
+          <span class="label">Respondeo — a resposta</span>
+          <p>A objeção 1 assume que "ser movido por outro" e "ser livre" se excluem — mas isso só vale quando as duas causas competem no mesmo nível causal, como quando alguém empurra fisicamente meu braço. Tomás de Aquino resolve o impasse distinguindo causa primeira e causa segunda: Deus, como causa primeira, não compete com a vontade pelo mesmo espaço de ação; Ele a causa <em>enquanto vontade</em>, ou seja, causa nela precisamente o modo livre de agir. A graça não substitui a liberdade — é a condição pela qual a liberdade, ferida pelo pecado, volta a operar em direção ao seu próprio bem.</p>
+          <p>Quanto à presciência divina (objeção 2): conhecer infalivelmente não é o mesmo que causar necessariamente. Boécio, na <em>Consolação da Filosofia</em>, observa que Deus não conhece o futuro "antes" no tempo — conhece todos os tempos num presente eterno, do mesmo modo que alguém vendo um ato contingente acontecer não torna esse ato necessário pelo simples fato de vê-lo.</p>
+        </div>
+
+        <div class="bloco ad">
+          <span class="label">Ad primum et ad tertium — respondendo diretamente</span>
+          <p><strong>Ad 1:</strong> logo, ser movido pela graça não elimina a autoria do ato, porque a graça atua na raiz da própria capacidade de querer, não como força concorrente externa.</p>
+          <p><strong>Ad 3:</strong> o sentimento de autoria não é ilusório — é exatamente o que a graça restaura, ao curar a vontade da divisão interna que Agostinho descreve em suas <em>Confissões</em>, onde a vontade dividida contra si mesma é sinal de liberdade ferida, não de liberdade ausente.</p>
+        </div>
+      </div>
+
+      <h2>Onde a filosofia continua sozinha</h2>
+      <p>A disputatio acima resolve o problema dentro da gramática teológica cristã. Fora dela, o problema persiste em termos puramente filosóficos: o compatibilismo contemporâneo (Frankfurt, entre outros) tenta salvar a liberdade dentro de um universo causalmente fechado sem recorrer a nenhuma causa primeira transcendente — uma resposta estruturalmente distinta, ainda que movida pela mesma pergunta.</p>
+
+      <div class="fontes">
+        <h3>Fontes primárias</h3>
+        <ol>
+          <li>Tomás de Aquino, <em>Summa Theologiae</em>, I, q. 83; I-II, q. 109–114</li>
+          <li>Agostinho de Hipona, <em>De gratia et libero arbitrio</em>; <em>Confissões</em>, livro VIII</li>
+          <li>Boécio, <em>De consolatione philosophiae</em>, livro V</li>
+        </ol>
+      </div>
+    </section>
+    </div>
+
+    <footer>Filoteo · conteúdo curado, cada verbete com fonte primária · construído sobre GitHub Pages</footer>
+
+  </main>
+</div>
+
+<script>
+(function(){
+  var input = document.getElementById('search');
+  var count = document.getElementById('search-count');
+  var listItems = Array.prototype.slice.call(document.querySelectorAll('.side-list li'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.verbete-section'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.cat-panel'));
+
+  function normalize(s){
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function setCategory(cat){
+    panels.forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-cat') === cat); });
+  }
+
+  // categoria inicial: se a URL j\u00e1 aponta para um verbete, ativa a categoria dele
+  var initialCat = 'filo';
+  if (location.hash){
+    var initialTarget = document.querySelector(location.hash);
+    if (initialTarget){
+      var initialPanel = initialTarget.closest('.cat-panel');
+      if (initialPanel) initialCat = initialPanel.getAttribute('data-cat');
+    }
+  }
+  setCategory(initialCat);
+  if (location.hash){
+    requestAnimationFrame(function(){
+      var t = document.querySelector(location.hash);
+      if (t) t.scrollIntoView();
+    });
+  }
+
+  document.addEventListener('click', function(e){
+    var catLink = e.target.closest('a[data-cat]');
+    var catHeading = e.target.closest('h3[data-cat]');
+    var sideLink = e.target.closest('.side-list a[href^="#sec-"]');
+
+    if (catLink){
+      e.preventDefault();
+      setCategory(catLink.getAttribute('data-cat'));
+      var t1 = document.querySelector(catLink.getAttribute('href'));
+      if (t1) requestAnimationFrame(function(){ t1.scrollIntoView({ behavior: 'smooth' }); });
+      return;
+    }
+
+    if (catHeading){
+      var cat = catHeading.getAttribute('data-cat');
+      setCategory(cat);
+      var panel = document.querySelector('.cat-panel[data-cat="' + cat + '"]');
+      if (panel) requestAnimationFrame(function(){ panel.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+      return;
+    }
+
+    if (sideLink){
+      e.preventDefault();
+      var group = sideLink.closest('ul[data-group]');
+      if (group) setCategory(group.getAttribute('data-group'));
+      var t2 = document.querySelector(sideLink.getAttribute('href'));
+      if (t2) requestAnimationFrame(function(){ t2.scrollIntoView({ behavior: 'smooth' }); });
+    }
+  });
+
+  input.addEventListener('input', function(){
+    var q = normalize(input.value.trim());
+    var visibleCount = 0;
+
+    document.body.classList.toggle('searching', q !== '');
+
+    listItems.forEach(function(li){
+      var t = normalize(li.getAttribute('data-title') || '');
+      var match = q === '' || t.indexOf(q) !== -1;
+      li.classList.toggle('hidden', !match);
+    });
+
+    sections.forEach(function(sec){
+      var t = normalize(sec.getAttribute('data-search') || '');
+      var match = q === '' || t.indexOf(q) !== -1;
+      sec.classList.toggle('no-match', !match);
+      if (match) visibleCount++;
+    });
+
+    count.textContent = q === '' ? '' : (visibleCount + ' verbete(s) encontrado(s)');
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.side-list a[href^="#sec-"]'));
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('active'); });
+        var id = entry.target.getAttribute('id');
+        var active = document.querySelector('.side-list a[href="#' + id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(function(sec){ obs.observe(sec); });
+})();
+</script>
+
+</body>
+</html>
